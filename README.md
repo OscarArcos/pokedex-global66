@@ -1,5 +1,13 @@
 # pokedex-global
 
+## Tecnologias
+1. Nuxt.js (Vue.js Framework)
+2. Node.js (npm - package manager)
+3. SASS (Preprocesador de CSS)
+4. Prettier (Formateo del código)
+5. ESLint (Limpiador de Código)
+6. Axios (Llamadas a la API - Fetch)
+
 ## Build Setup
 
 ```bash
