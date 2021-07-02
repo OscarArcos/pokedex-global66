@@ -1,0 +1,14 @@
+html {
+    width: 100%;
+    margin: 0;
+  }
+  
+  body {
+    margin: 0;
+    width: 100%;
+    background-color: $main-white-color;
+  }
+  
+  #__layout {
+    transition: all 1s cubic-bezier(0.55, 0, 0.1, 1);
+  }
