@@ -7,6 +7,7 @@
 4. Prettier (Formateo del código)
 5. ESLint (Limpiador de Código)
 6. Axios (Llamadas a la API - Fetch)
+7. Google Firebase Hosting (Despliegue de la aplicacion SPA - Estática)
 
 ## Build Setup
 
