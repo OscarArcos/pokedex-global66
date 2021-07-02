@@ -87,6 +87,6 @@ Este directorio es uno de lo más importantes del proyecto, Acá se hacen las pe
 
 Por ultimo tenemos los archivos "state.js" y "getters.js" donde se declara el estado incial de las variables y se hacen los getters donde se retorna este estado y puede ser consumido en cualquier parte de la aplicación(Estado Global).
 
-** Nota: Dentro del archivo Actions existe el método "fetchPokemones()", este médoto es un metodo recursivo, va a ejecutarse hasta traer toda la informacion de toda la páginacion de la API ya que por página solamente hay 20 Pokemones **
+*Nota: Dentro del archivo Actions existe el método "fetchPokemones()", este médoto es un metodo recursivo, va a ejecutarse hasta traer toda la informacion de toda la páginacion de la API ya que por página solamente hay 20 Pokemones*
 
 Más información sobre el uso de este directorio en [la Documentación](https://nuxtjs.org/docs/2.x/directory-structure/store).
