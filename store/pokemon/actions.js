@@ -27,10 +27,14 @@ export default {
     context.commit('resetFavorites')
   },
   async getInfoPokemon(context, url) {
-    const info = await this.$axios.get(url)
-    return info
+    try {
+      const info = await this.$axios.get(url)
+      return info
+    } catch (error) {
+      throw new Error(error)
+    }
   },
   changeListType(context, data) {
     context.commit('changeListType', data)
-  }
+  },
 }

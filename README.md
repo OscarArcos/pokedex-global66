@@ -73,14 +73,20 @@ Más información sobre el uso de este directorio en [la Documentación](https:/
 
 ### `static`
 
-This directory contains your static files. Each file inside this directory is mapped to `/`.
+Este directorio contiene sus archivos estáticos. Cada archivo dentro de este directorio se asigna a `/`.
 
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
+En este caso, estamos usando el directorio de archivos estáticos para almacenar los iconos e imágenes y referenciar mucho más rápido dentro de la aplicación
 
 Más información sobre el uso de este directorio en [la Documentación](https://nuxtjs.org/docs/2.x/directory-structure/static).
 
 ### `store`
 
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
+Este directorio contiene los archivos de su tienda Vuex. La creación de un archivo en este directorio activa Vuex automáticamente.
+
+Este directorio es uno de lo más importantes del proyecto, Acá se hacen las peticiones a la API que son disparadas dentro de los métodos de mounted() dentro de los componentes, esto se realiza dentro el archivo de "actions.js". Luego de realizar las peticiones a la API, la información que retorna la enviamos a la mutación ya que en las mutaciones se declara el estado e iguala a la información retornada por las peticiones. 
+
+Por ultimo tenemos los archivos "state.js" y "getters.js" donde se declara el estado incial de las variables y se hacen los getters donde se retorna este estado y puede ser consumido en cualquier parte de la aplicación(Estado Global).
+
+** Nota: Dentro del archivo Actions existe el método "fetchPokemones()", este médoto es un metodo recursivo, va a ejecutarse hasta traer toda la informacion de toda la páginacion de la API ya que por página solamente hay 20 Pokemones **
 
 Más información sobre el uso de este directorio en [la Documentación](https://nuxtjs.org/docs/2.x/directory-structure/store).
